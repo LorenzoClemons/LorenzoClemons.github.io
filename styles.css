@@ -1,0 +1,60 @@
+main {
+  background:#778da9;
+  color: #0d1b2a;
+  padding: 15px;
+}
+
+body{
+  border-style: groove;
+  border-color: #415a77;
+  margin: 1px
+}
+
+header{
+  background-color: #efe5dc;
+  height: 100px;
+  padding: 15px;
+}
+
+img {
+ width: 100%
+}
+p {
+  font-family: Bradley Hand, cursive;
+  font-size: 14
+
+}
+
+li {
+  font-family: Bradley Hand, cursive
+}
+
+h1 {
+  text-align: center;
+  height: 15px;
+  font-family: Trebuchet MS, sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-family: Trebuchet MS, sans-serif;
+  text-align: center;
+  height: 10px;
+}
+
+h3 {
+  font-family:  Trebuchet MS, sans-serif;
+  text-align: center;
+}
+
+h4 {
+  font-family: Trebuchet MS, sans-serif;
+  text-align: center;
+
+}
+
+hr{
+  border: 1px solid #e0e1dd;
+  width: 250px;
+
+}
