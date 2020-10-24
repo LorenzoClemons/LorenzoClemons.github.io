@@ -1,27 +1,27 @@
 main {
-  background:#778da9;
-  color: #0d1b2a;
-  padding: 15px;
+  background:#778da9; /* changes the "main" background color to blue */
+  color: #0d1b2a; /* changes the font to a lighter black */
+  padding: 15px; /*gives all the text padding on all sides, similar to a margin */
 }
 
 body{
-  border-style: groove;
-  border-color: #415a77;
-  margin: 1px
+  border-style: groove; /* declares a border style */
+  border-color: #415a77; /* changes the color of the border*/
+  margin: 1px /* adds indentation so lines do not start all the way to the right */
 }
 
 header{
   background-color: #efe5dc;
-  height: 100px;
+  height: 100px; /* makes "Hi!, I'm Lorenzo Clemons" closer to "I am a software developer living in TX" */
   padding: 15px;
 }
 
 img {
- width: 100%
+ width: 100% /* makes the picture the same width as the reswt of the text and margins*/
 }
 p {
-  font-family: Bradley Hand, cursive;
-  font-size: 14
+  font-family: Bradley Hand, cursive; /* declare font */
+  font-size: 14em /* declare font size" */
 
 }
 
