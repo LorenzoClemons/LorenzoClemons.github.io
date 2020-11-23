@@ -1,63 +1,198 @@
-main {
-  background:#778da9; /* changes the "main" background color to blue */
-  color: #0d1b2a; /* changes the font to a lighter black */
-  padding: 15px; /*gives all the text padding on all sides, similar to a margin */
+/* --- imported fonts --- */
+@font-face {
+  font-family: blackBones;
+  src: url(fonts/blackBones.ttf)
 }
 
-body{
-  border-style: groove; /* declares a border style */
-  border-color: #415a77; /* changes the color of the border*/
-  margin: 1px /* adds indentation so lines do not start all the way to the right */
+@font-face {
+  font-family: helloDreamer;
+  src: url(fonts/helloDreamer.otf)
 }
 
-header{
-  background-color: #efe5dc;
-  height: 100px; /* makes "Hi!, I'm Lorenzo Clemons" closer to "I am a software developer living in TX" */
-  padding: 15px;
+body {
+  margin: 0;
+  background-color: #4f5d75;
 }
 
-img {
- width: 100% /* makes the picture the same width as the reswt of the text and margins*/
-}
-p {
-  font-family: Bradley Hand, cursive; /* declare font */
-  font-size: 1.2em /* declare font size" */
-
-}
-
-li {
-  font-family: Bradley Hand, cursive
+header {
+  background-image: url(images/intersection.png);
+  margin-bottom: 40px;
+  font-family: blackBones;
+  border: solid;
+  border-radius: 20px;
 }
 
-h1 {
-  text-align: center;
-  height: 15px;
-  font-family: Trebuchet MS, sans-serif;
-  text-align: center;
+header div {
+  margin: 0px 15px;
 }
 
+.picture {
+  width: 500px;
+  border-radius: 50%;
+}
+
+
+/* --- Typography --- */
 h2 {
-  font-family: Trebuchet MS, sans-serif;
-  text-align: center;
-  height: 10px;
-}
-
-h3 {
-  font-family:  Trebuchet MS, sans-serif;
-  text-align: center;
+  font-family: helloDreamer,'Montserrat Alternates', sans-serif;
 }
 
 h4 {
-  font-family: Trebuchet MS, sans-serif;
-  text-align: center;
-
+  font-family: helloDreamer,'Montserrat Alternates', sans-serif;
 }
 
-hr{
-  border: 1px solid #e0e1dd;
-  width: 250px;
+
+
+
+
+
+/* ---  Navigation --- */
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-a:hover{ 
-  color: red;
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: blue;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* ---  (Desktop) Groups & Items --- */
+@media all and (min-width: 700px) {
+  header {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .logo {
+      margin: 14px 0 14px 20px;
+      padding-top: 0;
+      font-size: 42px;
+  }
+
+  header nav {
+      margin-top: 14px;
+  }
+}
+
+/* ---  Primary Groups --- */
+
+main {
+  padding: 20px 0;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+
+
+
+
+/* ---  Typography --- */
+
+
+
+h2 {
+  font-size: 26px;
+  font-family: helloDreamer, 'Montserrat Alternates', sans-serif;
+  font-weight: 400;
+  margin: 0 10px;
+}
+
+h3 {
+  font-size: 18px;
+  font-family: blackBones, 'Montserrat Alternates', sans-serif;
+  font-weight: 500;
+}
+
+p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5em;
+  margin-bottom: 0;
+}
+
+main a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+main a:link {
+  color: blue;
+}
+
+
+
+main a:hover {
+  color: black;
+}
+
+
+main img {
+  width: 100%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+
+
+
+
+/* @media all and (min-width: 800px)*/ 
+  section {
+      padding: 0 1%;
+  }
+
+  .group {
+      flex-direction: row;
+  }
+
+
+
+
+/* Contact Form Design */
+
+
+form label {
+  display: block;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
 }
