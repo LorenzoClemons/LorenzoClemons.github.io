@@ -9,41 +9,34 @@
   src: url(fonts/helloDreamer.otf)
 }
 
+/* -------  General Styles ------- */
+
 body {
   margin: 0;
   background-color: #4f5d75;
 }
 
 header {
+  background-color: antiquewhite;
   background-image: url(images/intersection.png);
   margin-bottom: 40px;
-  font-family: blackBones;
   border: solid;
   border-radius: 20px;
+  font-family: blackBones,'Montserrat Alternates', sans-serif;
+  
 }
 
-header div {
-  margin: 0px 15px;
+.logo {
+  text-align: center;
+  letter-spacing: -3;
+  margin: 0;
+  padding: 20px 0 0 0;
 }
 
 .picture {
   width: 500px;
   border-radius: 50%;
 }
-
-
-/* --- Typography --- */
-h2 {
-  font-family: helloDreamer,'Montserrat Alternates', sans-serif;
-}
-
-h4 {
-  font-family: helloDreamer,'Montserrat Alternates', sans-serif;
-}
-
-
-
-
 
 
 /* ---  Navigation --- */
@@ -75,21 +68,20 @@ header nav ul li a:hover {
   text-decoration: none;
 }
 
-/* ---  (Desktop) Groups & Items --- */
 @media all and (min-width: 700px) {
   header {
-      display: flex;
-      justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
   }
 
   .logo {
-      margin: 14px 0 14px 20px;
-      padding-top: 0;
-      font-size: 42px;
+    margin: 14px 0 14px 20px;
+    padding-top: 0;
+    font-size: 42px;
   }
-
+  
   header nav {
-      margin-top: 14px;
+    margin-top: 14px;
   }
 }
 
@@ -105,45 +97,41 @@ section {
 
 
 
-
-
 /* ---  Typography --- */
 
-
+h1 {
+  font-size: 48px;
+  font-family: blackBones,'Montserrat Alternates', sans-serif;
+  font-weight: 400;
+}
 
 h2 {
   font-size: 26px;
-  font-family: helloDreamer, 'Montserrat Alternates', sans-serif;
+  font-family: helloDreamer,'Montserrat Alternates', sans-serif;
   font-weight: 400;
   margin: 0 10px;
 }
-
 h3 {
   font-size: 18px;
-  font-family: blackBones, 'Montserrat Alternates', sans-serif;
+  font-family: blackBones,'Montserrat Alternates', sans-serif;
   font-weight: 500;
 }
 
+
 p {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5em;
-  margin-bottom: 0;
+ font-family: "comic sans", 'Montserrat', sans-serif;
+ line-height: 1.5em;
+ margin-bottom: 0;
+ font-size: medium;
 }
 
 main a {
-  font-weight: 700;
-  text-decoration: none;
+    font-weight: 700;
+    text-decoration: none;	
 }
 
-main a:link {
-  color: blue;
-}
-
-
-
-main a:hover {
-  color: black;
-}
+main  a:link { color: blue; }
+main  a:hover { color:black; }
 
 
 main img {
@@ -160,34 +148,36 @@ main img {
   margin: 10px;
 }
 
-.item-double {
+.double {
   flex: 2;
 }
 
 
 
+/* ---  (Desktop) Groups & Items --- */
 
-
-/* @media all and (min-width: 800px)*/ 
+@media all and (min-width: 800px) {
   section {
-      padding: 0 1%;
+    padding: 0 3%;
   }
-
   .group {
-      flex-direction: row;
+    flex-direction: row;
   }
-
+}
 
 
 
 /* Contact Form Design */
 
+form {
+  padding-right: 8px; 
+}
 
 form label {
   display: block;
 }
 
-form input,
+form input, 
 form textarea {
   width: 100%;
   margin-bottom: 20px;
@@ -196,3 +186,4 @@ form textarea {
 form textarea {
   height: 160px;
 }
+ 
